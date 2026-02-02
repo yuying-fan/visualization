@@ -8,22 +8,43 @@
 - Using Python and one other data visualization software (Excel or free alternative, Tableau Public, any other tool you prefer), create two distinct visualizations from your dataset of choice.  
 - For each visualization, describe and justify: 
     > What software did you use to create your data visualization?
+    Python and R
 
     > Who is your intended audience? 
-    
+    Public health officials and those interested in health data trends
+
     > What information or message are you trying to convey with your visualization? 
-    
+    The first visual is a bar chart looking at which health care settings are most effected by outbreaks. Showing how long-term care homes carry disproportionate outbreak burdens.
+    The second visual looks at how these outbreaks are recurring and cyclic, with large increases during major health crises and never seem to fully return to baseline.
+
     > What aspects of design did you consider when making your visualization? How did you apply them? With what elements of your plots? 
+    - Clarity -> minimal chart elements, no unnessecary grid lines, titles and clear axis labels
+    - Readability -> rotate x-axis labels
+    - Although visual 2 is wide, the image is in high-definition and can be zoomed in to look at section by section
     
     > How did you ensure that your data visualizations are reproducible? If the tool you used to make your data visualization is not reproducible, how will this impact your data visualization? 
-    
+    - Both visuals are reproducible. The codes for generating them as well as the reports (downloaded from https://open.toronto.ca/dataset/outbreaks-in-toronto-healthcare-institutions/) can be found in the assignment_3 folder.
+
     > How did you ensure that your data visualization is accessible?  
+    - Using clear color contrasts (white background; blue bars or lines);Avoiding red/green color combinations
+    - Adding descriptive titles and axis labels
+    - Removing unnecessary visual noise
+    - The image of the visuals are posted onto this public Github; which is accessible on various browser types
     
     > Who are the individuals and communities who might be impacted by your visualization?  
-    
+    - Patients in long-term care homes, and their families
+    - Healthcare workers that would be exposed to these repeating increasing outbreaks
+    - Public health officials that are involved in outbreak control
+
     > How did you choose which features of your chosen dataset to include or exclude from your visualization? 
+    The original dataset contains columns of id, Institution Name, Institution Address, Outbreak Setting, Type of Outbreak, Causative Agent-1, Causative Agent-2, Date Outbreak Began, Date Declared Over, Active. Since the goal of these two visuals was to examine larger system-level patterns in healthcare outbreaks, I included the columns of outbreak setting and date outbreak began. First, outbreak setting was used to compare which types of healthcare institutions experience the highest number of outbreaks. Next, Data Outbreak began was chosen to construct a monthly time-series showing how number of outbreaks change over time.
+
     
     > What ‘underwater labour’ contributed to your final data visualization product?
+    - Installing and configuring R
+    - Combining multiple year files together
+    - Fixing axis scaling and layout issues in the visual
+
 
 - This assignment is intentionally open-ended - you are free to create static or dynamic data visualizations, maps, or whatever form of data visualization you think best communicates your information to your audience of choice! 
 - Total word count should not exceed **(as a maximum) 1000 words** 
