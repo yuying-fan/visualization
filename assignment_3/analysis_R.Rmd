@@ -1,0 +1,40 @@
+---
+title: "Outbreak Trends in Toronto Healthcare Institutions"
+author: "Yuying Fan"
+output: html_document
+---
+
+```{r, message=FALSE, warning=FALSE, fig.width=20, fig.height=5}
+library(tidyverse)
+
+# load all outbreak csv files
+files <- list.files(pattern = "ob_report_.*csv")
+
+# combine into one dataframe
+df <- bind_rows(lapply(files, read_csv))
+
+# convert date column
+df$`Date Outbreak Began` <- as.Date(df$`Date Outbreak Began`)
+
+# count outbreaks per month
+monthly <- df %>%
+  mutate(month = format(`Date Outbreak Began`, "%Y-%m")) %>%
+  count(month)
+
+# plot
+ggplot(monthly, aes(x = month, y = n, group = 1)) +
+  geom_line(color = "steelblue", linewidth = 1) +
+  theme_classic() +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    plot.title = element_text(face = "bold")
+  ) +
+  labs(
+    title = "Monthly Healthcare Outbreaks (Toronto, 2016–2025)",
+    x = "Month",
+    y = "Number of Outbreaks"
+  )
+
+## in terminal:
+# Rscript -e "rmarkdown::render('analysis_R.Rmd')"
+# open analysis_R.html

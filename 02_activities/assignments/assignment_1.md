@@ -18,6 +18,8 @@
 *	Apply general design principles to create accessible and equitable data visualizations
 * Use data visualization to tell a story
 
+###### This assignment submission can be found in the participation folder, named participation_assignment1.ipynb
+
 ### Rubric:
 
 | Component          | Scoring                 | Requirement                                              |
@@ -31,7 +33,6 @@
 
 ### Note:
 
-* You should make a commit after each session with that lesson's code and notes. Your PR should have the same number of commits as there are sessions. It is important to make the commits to your branch in a timely manner right after each class.
 
 ### Submission Parameters:
 * Submission Due Date: `ongoing`
@@ -42,9 +43,9 @@
     * Open a private window in your browser. Copy and paste the link to your pull request into the address bar. Make sure you can see your pull request properly. This helps the technical facilitator and learning support staff review your submission easily.
 
 Checklist:
-- [ ] Create a branch called `assignment-1`.
-- [ ] Ensure that the repository is public.
-- [ ] Review [the PR description guidelines](https://github.com/UofT-DSI/onboarding/blob/main/onboarding_documents/submissions.md#guidelines-for-pull-request-descriptions) and adhere to them.
-- [ ] Verify that the link is accessible in a private browser window.
+- [x] Create a branch called `assignment-1`.
+- [x] Ensure that the repository is public.
+- [x] Review [the PR description guidelines](https://github.com/UofT-DSI/onboarding/blob/main/onboarding_documents/submissions.md#guidelines-for-pull-request-descriptions) and adhere to them.
+- [x] Verify that the link is accessible in a private browser window.
 
 If you encounter any difficulties or have questions, please don't hesitate to reach out to our team via our Slack. Our Technical Facilitators and Learning Support staff are here to help you navigate any challenges.
